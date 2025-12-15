@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieQL - PPL Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="editor-panel">
+        <h2>MovieQL Editor</h2>
+        <textarea
+          id="code-input"
+          placeholder="Type your command here...&#10;Ex: GET movies WHERE rating > 8"
+        ></textarea>
+        <button id="run-btn">RUN QUERY</button>
+        <div id="error-log" class="error"></div>
+      </div>
+
+      <div class="output-panel">
+        <h2>Result</h2>
+        <div id="output-area">Results will appear here...</div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
