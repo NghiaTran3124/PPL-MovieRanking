@@ -1,0 +1,29 @@
+{
+    "name": "ppl-movie-ranking",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "index.html",
+    "scripts": {
+        "test:parser": "node test/testParser.js",
+        "antlr:generate": "java -jar antlr-4.13.0-complete.jar grammar/MovieRanking.g4 -Dlanguage=JavaScript -visitor -o parse"
+    },
+    "keywords": [
+        "PPL",
+        "ANTLR",
+        "DSL",
+        "Compiler",
+        "Lexer",
+        "Parser",
+        "AST",
+        "Movie Ranking"
+    ],
+    "author": "PPL Movie Ranking Team",
+    "license": "MIT",
+    "dependencies": {
+        "antlr4": "^4.13.2"
+    },
+    "engines": {
+        "node": ">=16"
+    }
+}
