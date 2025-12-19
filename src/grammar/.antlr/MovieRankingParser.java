@@ -34,9 +34,7 @@ public class MovieRankingParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'('", "')'", "'='", "'!='", "'>'", "'>='", "'<'", "'<='", "'GET'", 
-			"'WHERE'", "'ORDER'", "'BY'", "'LIMIT'", "'ASC'", "'DESC'", "'AND'", 
-			"'OR'", "'movies'"
+			null, "'('", "')'", "'='", "'!='", "'>'", "'>='", "'<'", "'<='"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();

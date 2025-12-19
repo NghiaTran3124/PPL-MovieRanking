@@ -33,17 +33,35 @@ value: STRING | NUMBER;
 /*
  * ===================== Lexer Rules =====================
  */
+fragment A: [Aa];
+fragment B: [Bb];
+fragment C: [Cc];
+fragment D: [Dd];
+fragment E: [Ee];
+fragment G: [Gg];
+fragment H: [Hh];
+fragment I: [Ii];
+fragment L: [Ll];
+fragment M: [Mm];
+fragment N: [Nn];
+fragment O: [Oo];
+fragment R: [Rr];
+fragment S: [Ss];
+fragment T: [Tt];
+fragment V: [Vv];
+fragment Y: [Yy];
+fragment W: [Ww];
 
-GET: 'GET';
-WHERE: 'WHERE';
-ORDER: 'ORDER';
-BY: 'BY';
-LIMIT: 'LIMIT';
-ASC: 'ASC';
-DESC: 'DESC';
-AND: 'AND';
-OR: 'OR';
-MOVIES: 'movies';
+GET: G E T;
+WHERE: W H E R E;
+ORDER: O R D E R;
+BY: B Y;
+LIMIT: L I M I T;
+ASC: A S C;
+DESC: D E S C;
+AND: A N D;
+OR: O R;
+MOVIES: M O V I E S;
 
 STRING: '\'' (~['\r\n])* '\'';
 
