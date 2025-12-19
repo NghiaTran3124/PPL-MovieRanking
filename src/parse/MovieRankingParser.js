@@ -39,9 +39,7 @@ export default class MovieRankingParser extends antlr4.Parser {
 
     static grammarFileName = "MovieRanking.g4";
     static literalNames = [ null, "'('", "')'", "'='", "'!='", "'>'", "'>='", 
-                            "'<'", "'<='", "'GET'", "'WHERE'", "'ORDER'", 
-                            "'BY'", "'LIMIT'", "'ASC'", "'DESC'", "'AND'", 
-                            "'OR'", "'movies'" ];
+                            "'<'", "'<='" ];
     static symbolicNames = [ null, null, null, null, null, null, null, null, 
                              null, "GET", "WHERE", "ORDER", "BY", "LIMIT", 
                              "ASC", "DESC", "AND", "OR", "MOVIES", "STRING", 
