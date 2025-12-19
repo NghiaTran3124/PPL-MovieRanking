@@ -1,0 +1,42 @@
+{
+  "type": "Query",
+  "target": "movies",
+  "where": {
+    "type": "OR",
+    "left": {
+      "type": "AND",
+      "left": {
+        "type": "Condition",
+        "field": "rating",
+        "operator": ">=",
+        "value": 8
+      },
+      "right": {
+        "type": "Condition",
+        "field": "genre",
+        "operator": "=",
+        "value": "Sci-Fi"
+      }
+    },
+    "right": {
+      "type": "AND",
+      "left": {
+        "type": "Condition",
+        "field": "year",
+        "operator": ">",
+        "value": 2015
+      },
+      "right": {
+        "type": "Condition",
+        "field": "rating",
+        "operator": ">=",
+        "value": 7.5
+      }
+    }
+  },
+  "orderBy": {
+    "field": "rating",
+    "direction": "DESC"
+  },
+  "limit": 3
+}

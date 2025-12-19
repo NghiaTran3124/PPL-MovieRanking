@@ -1,0 +1,10 @@
+{
+  "type": "Query",
+  "target": "movies",
+  "where": null,
+  "orderBy": {
+    "field": "year",
+    "direction": "ASC"
+  },
+  "limit": null
+}

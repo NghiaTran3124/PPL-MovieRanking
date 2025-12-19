@@ -1,0 +1,5 @@
+GET movies
+WHERE (rating >= 8 AND genre = 'Sci-Fi')
+   OR (year > 2015 AND rating >= 7.5)
+ORDER BY rating DESC
+LIMIT 3

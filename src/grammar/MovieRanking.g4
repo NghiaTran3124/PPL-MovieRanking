@@ -4,33 +4,51 @@ grammar MovieRanking;
  * ===================== Parser Rules =====================
  */
 
-query: GET target WHERE condition EOF;
+query: getClause whereClause? orderByClause? limitClause? EOF;
 
-target: IDENTIFIER;
+getClause: GET MOVIES;
 
-condition: IDENTIFIER operator value;
+whereClause: WHERE expression;
 
-operator: GT | LT | GE | LE | EQ;
+orderByClause: ORDER BY IDENTIFIER (ASC | DESC)?;
 
-value: NUMBER;
+limitClause: LIMIT NUMBER;
 
+/*
+ * ===================== Expression =====================
+ */
+expression: orExpression;
+
+orExpression: andExpression (OR andExpression)*;
+
+andExpression: primary (AND primary)*;
+
+primary: '(' expression ')' | condition;
+
+condition: IDENTIFIER comparator value;
+
+comparator: '=' | '!=' | '>' | '>=' | '<' | '<=';
+
+value: STRING | NUMBER;
 /*
  * ===================== Lexer Rules =====================
  */
 
 GET: 'GET';
 WHERE: 'WHERE';
+ORDER: 'ORDER';
+BY: 'BY';
+LIMIT: 'LIMIT';
+ASC: 'ASC';
+DESC: 'DESC';
+AND: 'AND';
+OR: 'OR';
+MOVIES: 'movies';
 
-GT: '>';
-LT: '<';
-GE: '>=';
-LE: '<=';
-EQ: '=';
+STRING: '\'' (~['\r\n])* '\'';
 
-NUMBER: INT ('.' INT)?;
+NUMBER: [0-9]+ ('.' [0-9]+)?;
 
-fragment INT: [0-9]+;
-
-IDENTIFIER: [a-zA-Z_][a-zA-Z0-9_]*;
+IDENTIFIER: [a-zA-Z_][a-zA-Z_0-9]*;
 
 WS: [ \t\r\n]+ -> skip;
