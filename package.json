@@ -6,7 +6,7 @@
     "main": "index.html",
     "scripts": {
         "test:parser": "node test/testParser.js",
-        "antlr:generate": "java -jar antlr-4.13.0-complete.jar src/grammar/MovieRanking.g4 -Dlanguage=JavaScript -visitor -o parse"
+        "antlr:generate": "cd src/grammar && java -jar ../../antlr-4.13.0-complete.jar -Dlanguage=JavaScript -visitor -o ../parse MovieRanking.g4"
     },
     "keywords": [
         "PPL",

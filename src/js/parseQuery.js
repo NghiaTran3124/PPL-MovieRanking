@@ -1,7 +1,7 @@
 import antlr4 from "antlr4";
 
-import MovieRankingLexer from "../parse/grammar/MovieRankingLexer.js";
-import MovieRankingParser from "../parse/grammar/MovieRankingParser.js";
+import MovieRankingLexer from "../parse/MovieRankingLexer.js";
+import MovieRankingParser from "../parse/MovieRankingParser.js";
 import ASTBuilder from "../ast/ASTBuilder.js";
 
 export function parseQuery(input) {
