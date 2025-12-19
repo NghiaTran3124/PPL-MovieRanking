@@ -1,0 +1,30 @@
+{
+  "type": "Query",
+  "target": "movies",
+  "where": {
+    "type": "AND",
+    "left": {
+      "type": "Condition",
+      "field": "rating",
+      "operator": ">=",
+      "value": 8
+    },
+    "right": {
+      "type": "OR",
+      "left": {
+        "type": "Condition",
+        "field": "genre",
+        "operator": "=",
+        "value": "Sci-Fi"
+      },
+      "right": {
+        "type": "Condition",
+        "field": "genre",
+        "operator": "=",
+        "value": "Fantasy"
+      }
+    }
+  },
+  "orderBy": null,
+  "limit": null
+}

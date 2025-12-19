@@ -1,0 +1,21 @@
+{
+  "type": "Query",
+  "target": "movies",
+  "where": {
+    "type": "OR",
+    "left": {
+      "type": "Condition",
+      "field": "genre",
+      "operator": "=",
+      "value": "Action"
+    },
+    "right": {
+      "type": "Condition",
+      "field": "genre",
+      "operator": "=",
+      "value": "Drama"
+    }
+  },
+  "orderBy": null,
+  "limit": null
+}

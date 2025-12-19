@@ -1,0 +1,7 @@
+{
+  "type": "Query",
+  "target": "movies",
+  "where": null,
+  "orderBy": null,
+  "limit": null
+}
