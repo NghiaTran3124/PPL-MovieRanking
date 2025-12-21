@@ -1,1 +1,1 @@
-Get movies
+Get movie
