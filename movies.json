@@ -4,34 +4,159 @@
     "title": "Inception",
     "genre": "Sci-Fi",
     "rating": 8.8,
-    "year": 2010
+    "year": 2010,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"
   },
   {
     "id": 2,
     "title": "The Dark Knight",
     "genre": "Action",
     "rating": 9.0,
-    "year": 2008
+    "year": 2008,
+    "poster": "https://m.media-amazon.com/images/I/51rf820GM-L._AC_SL1050_.jpg"
   },
   {
     "id": 3,
     "title": "Interstellar",
     "genre": "Sci-Fi",
     "rating": 8.6,
-    "year": 2014
+    "year": 2014,
+    "poster": "https://upload.wikimedia.org/wikipedia/vi/4/46/Interstellar_poster.jpg"
   },
   {
     "id": 4,
     "title": "Titanic",
     "genre": "Romance",
     "rating": 7.8,
-    "year": 1997
+    "year": 1997,
+    "poster": "https://images-cdn.ubuy.co.in/634e3a4f44fbec77e05701ef-premiumprints-titanic-movie-poster.jpg"
   },
   {
     "id": 5,
     "title": "Avengers: Endgame",
     "genre": "Action",
     "rating": 8.4,
-    "year": 2019
+    "year": 2019,
+    "poster": "https://m.media-amazon.com/images/I/91EmWoPK3+L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Joker",
+    "genre": "Drama",
+    "rating": 8.2,
+    "year": 2019,
+    "poster": "https://upload.wikimedia.org/wikipedia/vi/9/90/Joker_%28phim_2019%29_poster.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Parasite",
+    "genre": "Drama",
+    "rating": 8.5,
+    "year": 2019,
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": 8,
+    "title": "The Godfather",
+    "genre": "Crime",
+    "rating": 9.2,
+    "year": 1972,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Pulp Fiction",
+    "genre": "Crime",
+    "rating": 8.9,
+    "year": 1994,
+    "poster": "https://cdn.europosters.eu/image/1300/posters/pulp-fiction-cover-i1288.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Shawshank Redemption",
+    "genre": "Drama",
+    "rating": 9.3,
+    "year": 1994,
+    "poster": "https://images-na.ssl-images-amazon.com/images/I/71715eBi1sL.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Fight Club",
+    "genre": "Drama",
+    "rating": 8.8,
+    "year": 1999,
+    "poster": "https://m.media-amazon.com/images/I/61IgtYrLF5L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Forrest Gump",
+    "genre": "Drama",
+    "rating": 8.8,
+    "year": 1994,
+    "poster": "https://m.media-amazon.com/images/I/613ZgTigTpL._AC_SL1000_.jpg"
+  },
+  {
+    "id": 13,
+    "title": "The Matrix",
+    "genre": "Sci-Fi",
+    "rating": 8.7,
+    "year": 1999,
+    "poster": "https://upload.wikimedia.org/wikipedia/vi/c/c1/The_Matrix_Poster.jpg"
+  },
+  {
+    "id": 14,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "genre": "Fantasy",
+    "rating": 8.8,
+    "year": 2001,
+    "poster": "https://m.media-amazon.com/images/I/81EBp0vOZZL._AC_SL1329_.jpg"
+  },
+  {
+    "id": 15,
+    "title": "The Social Network",
+    "genre": "Drama",
+    "rating": 7.7,
+    "year": 2010,
+    "poster": "https://upload.wikimedia.org/wikipedia/vi/7/7a/Social_network_film_poster.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Whiplash",
+    "genre": "Drama",
+    "rating": 8.5,
+    "year": 2014,
+    "poster": "https://upload.wikimedia.org/wikipedia/vi/0/01/Whiplash_poster.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Moonlight",
+    "genre": "Drama",
+    "rating": 7.4,
+    "year": 2016,
+    "poster": "https://upload.wikimedia.org/wikipedia/vi/8/84/Moonlight_%282016_film%29.png"
+  },
+  {
+    "id": 18,
+    "title": "Mad Max: Fury Road",
+    "genre": "Action",
+    "rating": 8.1,
+    "year": 2015,
+    "poster": "https://m.media-amazon.com/images/I/81NHzC3QEYL._AC_SL1333_.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Spirited Away",
+    "genre": "Animation",
+    "rating": 8.6,
+    "year": 2001,
+    "poster": "https://m.media-amazon.com/images/I/61ON14PVzoL._AC_SL1000_.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Casablanca",
+    "genre": "Romance",
+    "rating": 8.5,
+    "year": 1942,
+    "poster": "https://m.media-amazon.com/images/I/61-UNGpgYLL.jpg"
   }
 ]

@@ -3,27 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MovieRanking - PPL Project</title>
+    <title>PPL Movie Ranking DSL</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "antlr4": "https://cdn.jsdelivr.net/npm/antlr4@4.13.0/dist/antlr4.web.mjs"
+        }
+      }
+    </script>
   </head>
   <body>
-    <div class="container">
-      <div class="editor-panel">
-        <h2>MovieRanking Editor</h2>
-        <textarea
-          id="code-input"
-          placeholder="Type your command here...&#10;Ex: GET movies WHERE rating > 8"
-        ></textarea>
-        <button id="run-btn">RUN QUERY</button>
-        <div id="error-log" class="error"></div>
-      </div>
+    <div class="app-container">
+      <header>
+        <h1>🎬 PPL MovieRanking</h1>
+        <p>Domain Specific Language for Movie Ranking</p>
+      </header>
+      <div class="workspace">
+        <div class="left-column">
+          <div class="panel editor-panel">
+            <div class="panel-header">
+              <span><i class="fas fa-code"></i> QUERY EDITOR</span>
+              <button id="run-btn">▶ RUN</button>
+            </div>
+            <textarea
+              id="code-input"
+              spellcheck="false"
+              placeholder="// Enter your PPL query here..."
+            ></textarea>
+            <div id="error-log" class="error-console"></div>
+          </div>
 
-      <div class="output-panel">
-        <h2>Result</h2>
-        <div id="output-area">Results will appear here...</div>
+          <div class="panel bot-panel">
+            <div class="panel-header">
+              <span>🤖 AI ASSISTANT</span>
+              <span class="badge">Online</span>
+            </div>
+            <div id="chat-content" class="chat-content"></div>
+            <div id="suggestion-area" class="suggestion-area"></div>
+          </div>
+        </div>
+
+        <div class="panel output-panel">
+          <div class="panel-header">
+            <span>RESULTS</span>
+            <span id="result-count" class="badge">0 movies</span>
+          </div>
+          <div id="output-area" class="results-list"></div>
+
+          <div class="debug-ast">
+            <div class="panel-header small">AST PREVIEW (Debug)</div>
+            <pre id="ast-output">{}</pre>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
